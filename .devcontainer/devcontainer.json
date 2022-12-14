@@ -1,0 +1,26 @@
+{
+	"name": "Repro",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:6.0",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"omnisharp.defaultLaunchSolution": "Repro.sln",
+				"omnisharp.useModernNet": true
+			},
+			"extensions": [
+				"ms-dotnettools.csharp"
+			]
+		}
+	},
+	"containerEnv": {
+		// Enable detection of running in a container
+		"DOTNET_RUNNING_IN_CONTAINER": "true",
+		// Enable correct mode for dotnet watch (only mode supported in a container)
+		"DOTNET_USE_POLLING_FILE_WATCHER": "true"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:1": {
+			"version": "6.0.201"
+		}
+	}
+}
