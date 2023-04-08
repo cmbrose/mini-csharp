@@ -1,1 +1,1 @@
-A minimal repro of omnisharp issues in the c# vscode extension
+A minimal c# solution and project
